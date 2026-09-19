@@ -1,6 +1,6 @@
 .container {
   width: min(calc(100% - 40px), 750px);
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 
 header {
   margin: 20px auto 0px;
-  padding: 20px 0;
+  padding: 60px 0 0;
 
   display: flex;
   justify-content: space-between;
@@ -68,8 +68,65 @@ header nav a:hover {
   font-weight: bold;
 }
 
-section p {
-  font-size: 0.95rem;
+section div {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+section h2 {
+  font-size: 1rem;
   font-weight: 400;
   margin: 5px 0;
+}
+
+section p {
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+#projects div {
+  grid-column: span 2;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  display: block;
+  text-align: center;
+
+  border: 4px solid #3a3a3a;
+  border-radius: 6px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  padding: 16px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.project-card img,
+.project-card video {
+  width: 80%;
+  aspect-ratio: 1.2 / 1;
+  object-fit: cover;
+  display: block;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  border-radius: 6px;
+  margin: 0 auto 20px;
+}
+
+.project-card {
+  transition: border-color 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #636363;
 }
