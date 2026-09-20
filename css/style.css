@@ -204,6 +204,43 @@ section p {
   margin: 0;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 40px;
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px 16px;
+}
+
+.skill-list p {
+  margin: 0;
+  color: #d1d0d0;
+}
+
+.skill-category h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  color: #888;
+  font-size: 0.85rem;
+}
+
 @media (max-width: 600px) {
   header {
     flex-direction: column;
@@ -225,5 +262,13 @@ section p {
   .project-card img,
   .project-card video {
     width: 100%;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-list {
+    grid-template-columns: 1fr;
   }
 }
