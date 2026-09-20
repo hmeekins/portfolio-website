@@ -7,7 +7,7 @@ body {
   min-height: 100vh;
 
   color: #ffffff;
-  background: radial-gradient(circle, #252525 0%, #222222 100%);
+  background: radial-gradient(circle, #303030, #202020);
 
   font-family: "Roboto Condensed", sans-serif;
 }
