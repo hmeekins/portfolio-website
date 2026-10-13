@@ -67,12 +67,24 @@
       </div>
       <article class="project-card">
         <h3>Spiral VR</h3>
-        <video controls poster="images/SpiralVRCover.png">
-          <source
-            src="https://pub-a4c06dfc0e1d4c64a81890bdb72a6803.r2.dev/SpiralVRDemo.mp4"
-            type="video/mp4"
-          />
-        </video>
+        <div class="carousel" data-project="spiral">
+          <button
+            class="carousel-prev"
+            type="button"
+            aria-label="Previous media"
+          >
+            &#10094;
+          </button>
+
+          <div class="carousel-media"></div>
+
+          <button class="carousel-next" type="button" aria-label="Next media">
+            &#10095;
+          </button>
+
+          <div class="carousel-indicators"></div>
+        </div>
+
         <p>
           VR football application originally developed as a class project and
           later expanded for academic research. Features realistic throwing
@@ -104,12 +116,23 @@
       </article>
       <article class="project-card">
         <h3>Whack A Mole</h3>
-        <video controls poster="images/WhackAMoleCover.png">
-          <source
-            src="https://pub-a4c06dfc0e1d4c64a81890bdb72a6803.r2.dev/WhackAMoleDemo.mp4"
-            type="video/mp4"
-          />
-        </video>
+        <div class="carousel" data-project="whack-a-mole">
+          <button
+            class="carousel-prev"
+            type="button"
+            aria-label="Previous media"
+          >
+            &#10094;
+          </button>
+
+          <div class="carousel-media"></div>
+
+          <button class="carousel-next" type="button" aria-label="Next media">
+            &#10095;
+          </button>
+
+          <div class="carousel-indicators"></div>
+        </div>
         <p>
           VR interaction study designed to compare multiple input methods,
           including controller-based grabbing, direct hand interaction, and a
@@ -119,12 +142,23 @@
       </article>
       <article class="project-card">
         <h3>Blockly Coding environment</h3>
-        <video controls poster="images/BlocklyCover.png">
-          <source
-            src="https://pub-a4c06dfc0e1d4c64a81890bdb72a6803.r2.dev/Blockly.mp4"
-            type="video/mp4"
-          />
-        </video>
+        <div class="carousel" data-project="blockly">
+          <button
+            class="carousel-prev"
+            type="button"
+            aria-label="Previous media"
+          >
+            &#10094;
+          </button>
+
+          <div class="carousel-media"></div>
+
+          <button class="carousel-next" type="button" aria-label="Next media">
+            &#10095;
+          </button>
+
+          <div class="carousel-indicators"></div>
+        </div>
         <p>
           VR visual programming environment built upon the existing CodeVR
           project using Blockly. Extended the application with new programming
@@ -148,10 +182,22 @@
       </article>
       <article class="project-card">
         <h3>Learnaptic</h3>
-        <img
-          src="./images/LearnapticCover.png"
-          alt="Image of Learnaptic Application"
-        />
+        <div class="carousel" data-project="learnaptic">
+          <button
+            class="carousel-prev"
+            type="button"
+            aria-label="Previous media"
+          >
+            &#10094;
+          </button>
+
+          <div class="carousel-media"></div>
+
+          <button class="carousel-next" type="button" aria-label="Next media">
+            &#10095;
+          </button>
+          <div class="carousel-indicators"></div>
+        </div>
         <p>
           Full-stack study application for organizing notebooks and flashcards.
           Currently in development, with plans to use saved notes to generate
@@ -253,5 +299,6 @@
         hmeekins4@gmail.com
       </a>
     </footer>
+    <script src="./js/carousel.js" defer></script>
   </body>
 </html>
